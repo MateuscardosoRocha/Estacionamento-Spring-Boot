@@ -10,9 +10,20 @@
 </br>
 
 <p>Configure as propriedades do banco de dados no arquivo "src/main/resources/application.properties":<p>
-spring.datasource.url=jdbc:postgresql://localhost:5432/parking-control-db
-spring.datasource.username=postgres
+<p>spring.datasource.url=jdbc:postgresql://localhost:5432/parking-control-db</p>
+<p>spring.datasource.username=postgres<p>
 spring.datasource.password=sua-senha
 
+<br><br>
 
 Acesse a aplicação em http://localhost:8080
+
+
+
+<h2>Endpoints</h2>
+<p><b>GET</b>  http://localhost:8080/parking-spot: lista todos os carros cadastrados<br></p>
+<p><b>GET</b>  http://localhost:8080/parking-spot/ID: retorna os dados de um carro específico<br></p>
+<p><b>POST</b>  http://localhost:8080/parking-spot: cadastra um novo carro<br></p>
+<p><b>PUT</b>  http://localhost:8080/parking-spot/ID: atualiza os dados de um carro específico<br></p>
+<p><b>DELETE</b>  http://localhost:8080/parking-spot/ID: remove um carro específico<br></p>
+
